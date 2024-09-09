@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(37, 37, 37);
+        }
+
+        .logo_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        img {
+            opacity: 0;
+            animation: logo-loader ease-in 2s forwards;
+            margin-left: 40%;
+        }
+        .wipe{
+            width: 482px;
+    overflow: hidden;
+    margin: 0 auto;   
+    animation-name: wipe;
+  animation-direction: reverse;
+  animation-duration: 3s;
+        }
+        @keyframes logo-loader {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes wipe{
+            to{
+                width: 100;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo_container">
+
+        <img src="https://github.com/rookiedev07/college-projectNG/blob/main/1000028437.png?raw=true" alt="loaderlogo"
+            height="50" width="100" />
+        <h3 class="wipe">NewGen Fitness</h3>
+    </div>
+</body>
+
+</html>
